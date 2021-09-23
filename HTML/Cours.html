@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- To start an html documents write html:5 -->
+<!-- this is the part for the head page -->
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Page title / the title has to be the highest possible-->
+   <title>Cours html</title>
+
+   <!-- Page icon-->
+   <link rel="shortcut icon" href="html.png">
+
+</head>
+
+<!-- this part is for page text-->
+
+<body>
+
+   <!--===================================================================================================================================================================-->
+
+   First section has to be an header :
+   <header>Text...</header>
+
+   To go back to line :
+   <br>
+
+   To seperate the text into part :
+   <section> </section>"" for the biggest part
+   <div> </div>" for lowest part
+
+   To write a tilte :
+   <h1>Title 1</h1> <!-- Only 1 h1 per page-->
+   <h2>Title 2</h2>
+   <h3>Title 3</h3> ...h6
+
+   To write a paragraphe :
+   <p>Text paragraph</p>
+
+   To write in Italic :
+   <em>Italic text</em>
+
+   To write a text in bald :
+   <strong>Bald text</strong>
+
+   To write random text and test a site page : lorem15 -> 15 random words
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi voluptatum blanditiis? Eos, dolorum
+      incidunt.</p>
+
+   To continue to write on the same line :
+   <span>text</span>
+
+   <!--===================================================================================================================================================================-->
+
+   To add a photo :
+   <img src="image.jpg" height="200" alt="">
+   <!-- src : File name  height : height of the pic  alt : name display in case of error-->
+
+   <!--===================================================================================================================================================================-->
+
+   To implement an unorderd list :
+   <ul>
+      <li> first point ...</li>
+      <li> second point ...</li> <!-- ul : unorderd list-->
+      <li> third point ...</li>
+   </ul>
+
+   To implement an orderd list :
+   <ol>
+      <li> first point ...</li>
+      <li> second point ...</li> <!-- ol : orderd list-->
+      <li> third point ...</li>
+   </ol>
+
+   <!--===================================================================================================================================================================-->
+
+   To implement a table :
+   <table border="1" width="50%">
+
+      <!-- table caption-->
+      <caption>Table caption</caption>
+
+      <!-- table header-->
+      <thead>Table header
+         <tr>
+            <th>Country</th>
+            <th>Population</th>
+         </tr>
+      </thead>
+
+      <!-- table body-->
+      <tbody>
+         <tr>
+            <td>France</td>
+            <td>68 M</td>
+         </tr>
+         <tr>
+            <td>Germany</td>
+            <td>80 M</td>
+         </tr>
+      </tbody>
+   </table>
+
+   <!--===================================================================================================================================================================-->
+
+   To put a link :
+   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Best song</a>
+   <!--target="_blank" to open the link in an other page -->
+   <br>
+   <a href="https://htmlcheatsheet.com/" target="_blank"> html help</a>
+
+   <!--===================================================================================================================================================================-->
+
+   To put html icon :
+   <!--https://www.toptal.com/designers/htmlarrows/symbols/-->
+   <span>&#10051;</span>
+
+   <!--===================================================================================================================================================================-->
+
+   To put a video :
+   <video src="Video.mp4" height="150" autoplay loop muted></video>
+
+   <!--===================================================================================================================================================================-->
+
+   To implement a form :
+   <form action="/actio.php" method="post">
+      <label for="name">Nom</label>
+      <input id="name" type="text" placeholder="Entrez votre nom" /><br />
+
+      <label for="number">Entrez votre age</label>
+      <input type="number" id="number-age" value="15" oninput="document.getElementById('range-age').value=this.value">
+      <input type="range" id="range-age" min="0" max="100"
+         oninput="document.getElementById('number-age').value=this.value"><br />
+
+      <!-- Input select -->
+      <label for="gender">Genre</label>
+      <select id="gender">
+         <option selected="selected" value="Homme">Homme</option>
+         <option value="Femme">Femme</option>
+      </select><br />
+
+      <!-- Input radio -->
+      <div>
+         <input type="radio" name="type" id="human" checked />
+         <label for="human">Humain</label>
+
+         <input type="radio" name="type" id="dog" />
+         <label for="dog">Chien</label>
+
+         <input type="radio" name="type" id="cat" />
+         <label for="cat">Chat</label>
+      </div>
+
+      <textarea cols="20" rows="5" placeholder="Votre message..."></textarea><br />
+
+      <!-- Input Checkbox -->
+      <label><input type="checkbox" />Accepter les CGV</label> <br />
+      <input type="submit" value="Submit" />
+   </form>
+
+   <!--===================================================================================================================================================================-->
+
+   <!-- Mail & envoi de fichiers -->
+   <footer>
+      <a href="mailto:fs@gmail.com">Ecrivez-moi !</a>
+      <br />
+      <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+      <details>
+         <summary>Plus d'infos</summary>
+         <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+            repellendus.
+         </p>
+      </details>
+   </footer>
+
+</body>
+
+</html>
